@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NITK E-Learning</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body style="background-color: #DADADA">
+
+<nav class="navbar navbar-inverse">
+	<div class="container-inverse hidden-xs" style="background-color: #DADADA; padding: 10px;">
+		<div class="row">
+			<span class="col-lg-2 col-md-2 col-sm-2" style="margin-right: -50px; margin-top: 5px; margin-left: 20px">
+				<a href="index.html">
+					<img class="img-responsive" src="img/logo.png" width="50%" height="10%">
+				</a>
+			</span>
+			<span class="col-lg-6 col-md-7 col-sm-7" style="padding: 0px; color:#E0E0E0;">
+				<a href="index.html">
+					<h2 style="display: inline-block; margin: 15px 0px -10px 0px; color: #6F6F6F">National Institute of Technology Karnataka,<br>E-Learning Portal</h2>
+				</a>
+			</span>
+			<div class="col-lg-4 col-md-3 col-sm-3" style="color: #6F6F6F;">
+				<ul class="nav navbar-nav navbar-right">
+			      <li>
+			      	<a href="signup.html"><span class="glyphicon glyphicon-user" style="color:#6F6F6F; font-size: 20px; margin-top: 30px"></span><span style="color:#6F6F6F; font-size: 20px"> Sign Up</span></a>
+			      </li>
+			      <li>
+			      	<a href="login.html"><span class="glyphicon glyphicon-log-in" style="color:#6F6F6F; font-size: 20px; margin-top: 30px"></span><span style="color:#6F6F6F; font-size: 20px"> Login</span></a>
+			      </li>
+			    </ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="student_hci.html">Student</a></li>
+				<li><a href="professor.html">Professor</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	    <div class="well">
+	        <h4>What is on your mind?</h4>
+		    <div class="input-group">
+		        <input type="text" id="userComment" class="form-control input-sm chat-input" placeholder="Write your message here..." />
+			    <span class="input-group-btn" onclick="addComment()">     
+		            <a href="#" class="btn btn-primary btn-sm">
+		            	<span class="glyphicon glyphicon-comment"></span> Add Comment
+		            </a>
+		        </span>
+		    </div>
+	    	<hr data-brackets-id="12673">
+	    	<ul data-brackets-id="12674" id="sortable" class="list-unstyled ui-sortable">
+	        	<strong class="pull-left primary-font">Hafeez</strong>
+	        	<small class="pull-right text-muted">
+	        		<span class="glyphicon glyphicon-time"></span>
+	        		7 mins ago
+	        	</small>
+	        	<br>
+	        	<li class="ui-state-default">
+	        		What is the signifance of Norman's Principles in modern web development?
+	        	</li>
+	        	<br>
+	         	<strong class="pull-left primary-font">M.M.V</strong>
+	        	<small class="pull-right text-muted">
+	           		<span class="glyphicon glyphicon-time"></span>14 mins ago
+	           	</small>
+	        	<br>
+	        	<li class="ui-state-default">
+	        		When do we need to submit the HCI assignment?
+	        	</li>
+	        	<br>
+	         	<strong class="pull-left primary-font">Daitya</strong>
+	        	<small class="pull-right text-muted">
+	           		<span class="glyphicon glyphicon-time"></span>20 mins ago
+	           	</small>
+	        	<br>
+	        	<li class="ui-state-default">
+	        		What are the portions for the HCI mid-sem exam? Do we have a lab mid-sem?
+	        	</li>
+	        	<br>
+	         	<strong class="pull-left primary-font">Revanth</strong>
+	        	<small class="pull-right text-muted">
+	           		<span class="glyphicon glyphicon-time"></span>25 mins ago
+	           	</small>
+	        	<br>
+	        	<li class="ui-state-default">
+	        		Why should I study HCI?
+	        	</li>
+	        	<br>
+	         	<strong class="pull-left primary-font">Big J</strong>
+	        	<small class="pull-right text-muted">
+	           		<span class="glyphicon glyphicon-time"></span>35 mins ago
+	           	</small>
+	        	<br>
+	        	<li class="ui-state-default">
+	        		My minor project mentor is not accepting my project proposal... But he accepted my friend's proposal. This sucks man. I can see my pointer burning
+	        	</li>
+	        	<br>
+	         	<strong class="pull-left primary-font">Rakshith</strong>
+	        	<small class="pull-right text-muted">
+	           		<span class="glyphicon glyphicon-time"></span>40 mins ago
+	           	</small>
+	        	<br>
+	        	<li class="ui-state-default">
+	        		Sir is saying that he can implement my IAS project in 2 hours. What is he, a nerd?
+	        	</li>
+	        	<br>
+	         	<strong class="pull-left primary-font">Belli</strong>
+	        	<small class="pull-right text-muted">
+	           		<span class="glyphicon glyphicon-time"></span>53 mins ago
+	           	</small>
+	        	<br>
+	        	<li class="ui-state-default">
+	        		Life is all about sleeping and watching cricket matches :P
+	        	</li>
+	        	<br>
+	         	<strong class="pull-left primary-font">Vade</strong>
+	        	<small class="pull-right text-muted">
+	           		<span class="glyphicon glyphicon-time"></span>58 mins ago
+	           	</small>
+	        	<br>
+	        	<li class="ui-state-default">
+	        		I love eating vades. They should make it the staple food at NITK. Even though I eat a lot of vades, I'm thin. Paapa MMV doesn't even eat vades, but he's fat.
+	        	</li>
+
+	    	</ul>
+	    </div>
+</div>
+
+<footer class="row-footer" style="margin-top:20px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<h5 class="text-col" style="font-family: 'Montserrat'; text-align: center;">
+					<a href="#" style="color: white">TEACH</a>
+				</h5>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<h5 class="text-col" style="font-family: 'Montserrat'; text-align: center;">
+					<a href="#" style="color: white">LEARN</a>
+				</h5>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<h5 class="text-col" style="font-family: 'Montserrat'; text-align: center;">
+					<a href="#" style="color: white">ABOUT</a>
+				</h5>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<h5 class="text-col" style="font-family: 'Montserrat'; text-align: center;">
+					<a href="#" style="color: white">WRITE</a>
+				</h5>
+			</div>
+			<div class="col-xs-12">
+				<p align="center" style="color:white;">National Institute of Technology, Surathkal</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

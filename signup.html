@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NITK E-Learning - Sign Up</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+</head> 
+<body style="background-color: #DADADA">
+
+<nav class="navbar navbar-inverse" style="margin: 0">
+	<div class="container-inverse hidden-xs" style="background-color: #DADADA; padding: 10px;">
+		<div class="row">
+			<span class="col-lg-2 col-md-2 col-sm-2" style="margin-right: -50px; margin-top: 5px; margin-left: 20px">
+				<a href="index.html">
+					<img class="img-responsive" src="img/logo.png" width="50%" height="10%">
+				</a>
+			</span>
+			<span class="col-lg-6 col-md-7 col-sm-7" style="padding: 0px; color:#E0E0E0;">
+				<a href="index.html">
+					<h2 style="display: inline-block; margin: 15px 0px -10px 0px; color: #6F6F6F">National Institute of Technology Karnataka,<br>E-Learning Portal</h2>
+				</a>
+			</span>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="student_hci.html">Student</a></li>
+				<li><a href="professor.html">Professor</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<div id="signupbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 signup-box"> 
+		<div class="panel panel-info"> 
+			<div class="panel-heading"> 
+				<div class="panel-title"> Sign Up </div> 
+				<div class="signin"> 
+						<a id="signinlink" href="login.html">Sign In</a> 
+				</div> 
+			</div> 
+			<div class="panel-body"> 
+				<form id="signupform" class="form-horizontal" role="form"> 
+					<div id="signupalert" class="alert alert-danger login-alert"> 
+						<p> Error: </p> 
+						<span></span> 
+					</div> 
+					<div class="form-group"> 
+						<label for="email" class="col-md-3 control-label">Email</label>
+					 	<div class="col-md-9"> 
+					 		<input type="text" class="form-control" name="email" placeholder="Email Address"> 
+					 	</div> 
+					 </div> 
+					 <div class="form-group"> 
+					 	<label for="firstname" class="col-md-3 control-label">First Name</label> 
+					 	<div class="col-md-9"> 
+					 		<input type="text" class="form-control" name="firstname" placeholder="First Name"> 
+					 	</div> 
+					 </div> 
+					 <div class="form-group"> 
+					 	<label for="lastname" class="col-md-3 control-label">Last Name</label> 
+					 	<div class="col-md-9"> 
+					 		<input type="text" class="form-control" name="lastname" placeholder="Last Name"> 
+					 	</div> 
+					 </div> 
+					 <div class="form-group"> 
+					 	<label for="password" class="col-md-3 control-label">Password</label> 
+					 	<div class="col-md-9"> 
+					 		<input type="password" class="form-control" name="passwd" placeholder="Password"> 
+					 	</div> 
+					 </div> 
+					 <div class="form-group"> 
+					 	<label for="icode" class="col-md-3 control-label">Re-enter Password</label> 
+					 	<div class="col-md-9"> 
+					 		<input type="password" class="form-control" name="repasswd" placeholder="Password"> 
+					 	</div> 
+					 </div> 
+					 <div class="form-group"> 
+					 	<div class="col-md-offset-3 col-md-9"> 
+					 		<button id="btn-signup" type="button" class="btn btn-info"> <i class="icon-hand-right"></i> &nbsp; Sign Up </button>
+					 		<strong>OR</strong> 
+					 	</div> 
+					 </div> 
+					 <div class="form-group margL10"> 
+					 	<div class=""> 
+					 		<button id="btn-fbsignup" type="button" class="btn btn-facebook"> <i class="icon-facebook"></i> Sign Up with Facebook </button> 
+					 		<a id="btn-googlelogin" href="#" class="btn btn-google"> Sign up with Google+ </a> 
+							<a id="btn-twitterlogin" href="#" class="btn btn-twitter"> Sign up with Twitter </a> 
+					 	</div> 
+					 </div> 
+				</form> 
+			</div> 
+		</div> 
+	</div> 
+</div> 
+
+<footer class="row-footer" style="margin-top:30px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<h5 class="text-col" style="font-family: 'Montserrat'; text-align: center;">
+					<a href="#" style="color: white">TEACH</a>
+				</h5>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<h5 class="text-col" style="font-family: 'Montserrat'; text-align: center;">
+					<a href="#" style="color: white">LEARN</a>
+				</h5>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<h5 class="text-col" style="font-family: 'Montserrat'; text-align: center;">
+					<a href="#" style="color: white">ABOUT</a>
+				</h5>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<h5 class="text-col" style="font-family: 'Montserrat'; text-align: center;">
+					<a href="#" style="color: white">WRITE</a>
+				</h5>
+			</div>
+			<div class="col-xs-12">
+				<p align="center" style="color:white;">National Institute of Technology, Surathkal</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body> 
+</html>
